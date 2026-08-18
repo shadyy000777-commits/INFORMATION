@@ -3,7 +3,7 @@ import requests
 # ============================================
 # ONLY CHANGE THIS LINE — paste your access token below
 # ============================================
-ACCESS_TOKEN = "your_access_token_here"
+ACCESS_TOKEN = "EAAaRuA6zqbgBSWm6YxNM4CdyqHZCuxgNoNfBX2aGeLlpOnZAezeY5680JgvEDePRjUew7b3hZC7b3hZCWMRfjebo8xkffrdj1kCpwgp3BX6HrnZAYMpZCHjKlGcoJJSyUZC0XWKZCppzZBgMhBZBPA9mfWd3uwCG8zDaZBWqTI9tlZAJow5KAdfuPmOeYPx7AZDZD"
 # ============================================
 
 
@@ -31,8 +31,6 @@ def main():
     data = get_instagram_details(ACCESS_TOKEN)
     if data:
         print(f"Username: {data.get('username')}")
-        print(f"Email: {data.get('email')}")
-        print(f"Phone Number: {data.get('phone_number')}") 
         print(f"Account Type: {data.get('account_type')}")
         print(f"Biography: {data.get('biography')}")
         print(f"Website: {data.get('website')}")
